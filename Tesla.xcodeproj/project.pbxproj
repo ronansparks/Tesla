@@ -16,6 +16,12 @@
 		34FBC75120E2424500935AE5 /* TeslaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34FBC75020E2424500935AE5 /* TeslaTests.swift */; };
 		34FBC75C20E2424500935AE5 /* TeslaUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34FBC75B20E2424500935AE5 /* TeslaUITests.swift */; };
 		34FBC77220E24F3A00935AE5 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 34FBC77120E24F3A00935AE5 /* GoogleService-Info.plist */; };
+		34FBC77520E2514C00935AE5 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34FBC77420E2514C00935AE5 /* LoginViewController.swift */; };
+		34FBC77820E2517900935AE5 /* RootNavigationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34FBC77720E2517900935AE5 /* RootNavigationViewController.swift */; };
+		34FBC78220E25CC300935AE5 /* Gotham-Light.otf in Resources */ = {isa = PBXBuildFile; fileRef = 34FBC77F20E25CC300935AE5 /* Gotham-Light.otf */; };
+		34FBC78320E25CC300935AE5 /* Gotham-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 34FBC78020E25CC300935AE5 /* Gotham-Bold.otf */; };
+		34FBC78420E25CC300935AE5 /* Gotham-Book.otf in Resources */ = {isa = PBXBuildFile; fileRef = 34FBC78120E25CC300935AE5 /* Gotham-Book.otf */; };
+		34FBC78720E261CA00935AE5 /* UIFont.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34FBC78620E261CA00935AE5 /* UIFont.swift */; };
 		5AA2F5D848EC34042121E4E4 /* Pods_TeslaTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E11D969F2639D27CDA880866 /* Pods_TeslaTests.framework */; };
 		638A30FA81C2ABBD01900BA6 /* Pods_TeslaUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EE1F10CD709CD7EF1D17BD4E /* Pods_TeslaUITests.framework */; };
 /* End PBXBuildFile section */
@@ -53,6 +59,12 @@
 		34FBC75B20E2424500935AE5 /* TeslaUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeslaUITests.swift; sourceTree = "<group>"; };
 		34FBC75D20E2424500935AE5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		34FBC77120E24F3A00935AE5 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		34FBC77420E2514C00935AE5 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		34FBC77720E2517900935AE5 /* RootNavigationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootNavigationViewController.swift; sourceTree = "<group>"; };
+		34FBC77F20E25CC300935AE5 /* Gotham-Light.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Gotham-Light.otf"; sourceTree = "<group>"; };
+		34FBC78020E25CC300935AE5 /* Gotham-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Gotham-Bold.otf"; sourceTree = "<group>"; };
+		34FBC78120E25CC300935AE5 /* Gotham-Book.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Gotham-Book.otf"; sourceTree = "<group>"; };
+		34FBC78620E261CA00935AE5 /* UIFont.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIFont.swift; sourceTree = "<group>"; };
 		355BB1FF58B9212818C4BA9A /* Pods-TeslaUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TeslaUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TeslaUITests/Pods-TeslaUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		5BA31A304A1CE8C220FF993B /* Pods-Tesla.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Tesla.release.xcconfig"; path = "Pods/Target Support Files/Pods-Tesla/Pods-Tesla.release.xcconfig"; sourceTree = "<group>"; };
 		94AB0519166DDE5EF07FE43C /* Pods-TeslaUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TeslaUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-TeslaUITests/Pods-TeslaUITests.release.xcconfig"; sourceTree = "<group>"; };
@@ -131,6 +143,7 @@
 			children = (
 				34FBC76F20E2454900935AE5 /* Delegates */,
 				34FBC77020E245CF00935AE5 /* Protocols */,
+				34FBC78520E261A300935AE5 /* Extensions */,
 				34FBC76C20E2451500935AE5 /* Models */,
 				34FBC76D20E2451E00935AE5 /* Views */,
 				34FBC76E20E2452700935AE5 /* Controllers */,
@@ -162,6 +175,9 @@
 		34FBC76920E244B600935AE5 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				34FBC78020E25CC300935AE5 /* Gotham-Bold.otf */,
+				34FBC78120E25CC300935AE5 /* Gotham-Book.otf */,
+				34FBC77F20E25CC300935AE5 /* Gotham-Light.otf */,
 				34FBC74220E2424500935AE5 /* Assets.xcassets */,
 			);
 			path = Resources;
@@ -202,6 +218,8 @@
 		34FBC76E20E2452700935AE5 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				34FBC77620E2515100935AE5 /* NavigationController */,
+				34FBC77320E250FC00935AE5 /* LoginViewController */,
 				34FBC73D20E2424400935AE5 /* ViewController.swift */,
 			);
 			path = Controllers;
@@ -220,6 +238,30 @@
 			children = (
 			);
 			path = Protocols;
+			sourceTree = "<group>";
+		};
+		34FBC77320E250FC00935AE5 /* LoginViewController */ = {
+			isa = PBXGroup;
+			children = (
+				34FBC77420E2514C00935AE5 /* LoginViewController.swift */,
+			);
+			path = LoginViewController;
+			sourceTree = "<group>";
+		};
+		34FBC77620E2515100935AE5 /* NavigationController */ = {
+			isa = PBXGroup;
+			children = (
+				34FBC77720E2517900935AE5 /* RootNavigationViewController.swift */,
+			);
+			path = NavigationController;
+			sourceTree = "<group>";
+		};
+		34FBC78520E261A300935AE5 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				34FBC78620E261CA00935AE5 /* UIFont.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 		FB15861B0FAE4EF622FF9A86 /* Frameworks */ = {
@@ -340,10 +382,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				34FBC78320E25CC300935AE5 /* Gotham-Bold.otf in Resources */,
 				34FBC74620E2424500935AE5 /* LaunchScreen.storyboard in Resources */,
 				34FBC77220E24F3A00935AE5 /* GoogleService-Info.plist in Resources */,
 				34FBC74320E2424500935AE5 /* Assets.xcassets in Resources */,
 				34FBC74120E2424400935AE5 /* Main.storyboard in Resources */,
+				34FBC78420E25CC300935AE5 /* Gotham-Book.otf in Resources */,
+				34FBC78220E25CC300935AE5 /* Gotham-Light.otf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -451,7 +496,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				34FBC77820E2517900935AE5 /* RootNavigationViewController.swift in Sources */,
+				34FBC77520E2514C00935AE5 /* LoginViewController.swift in Sources */,
 				34FBC73E20E2424400935AE5 /* ViewController.swift in Sources */,
+				34FBC78720E261CA00935AE5 /* UIFont.swift in Sources */,
 				34FBC73C20E2424400935AE5 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -630,7 +678,10 @@
 				DEVELOPMENT_TEAM = 6SB824SJ7Y;
 				INFOPLIST_FILE = "$(SRCROOT)/Tesla/Supporting Files/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.ronansparks.Tesla;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -647,7 +698,10 @@
 				DEVELOPMENT_TEAM = 6SB824SJ7Y;
 				INFOPLIST_FILE = "$(SRCROOT)/Tesla/Supporting Files/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.ronansparks.Tesla;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -664,7 +718,11 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 6SB824SJ7Y;
 				INFOPLIST_FILE = TeslaTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.ronansparks.TeslaTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -682,7 +740,11 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 6SB824SJ7Y;
 				INFOPLIST_FILE = TeslaTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.ronansparks.TeslaTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -699,7 +761,11 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 6SB824SJ7Y;
 				INFOPLIST_FILE = TeslaUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.ronansparks.TeslaUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -716,7 +782,11 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 6SB824SJ7Y;
 				INFOPLIST_FILE = TeslaUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.ronansparks.TeslaUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
