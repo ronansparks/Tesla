@@ -17,10 +17,23 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
         window = UIWindow(frame: UIScreen.main.bounds)
-        let root = LoginViewController()
-        let navi = RootNavigationViewController(rootViewController: root)
-        window?.rootViewController = navi
+        let loginVC = LoginViewController()
+        window?.rootViewController = loginVC
         window?.makeKeyAndVisible()
+        
+        if #available(iOS 11.0, *) {
+            // 导航栏透明度不设置
+            UINavigationBar.appearance().isTranslucent = false
+            // 导航栏分割线
+            UINavigationBar.appearance().shadowImage = UIImage()
+            // 大标题
+            UINavigationBar.appearance().prefersLargeTitles = true
+            // 大标题样式
+            UINavigationBar.appearance().largeTitleTextAttributes = [
+                NSAttributedStringKey.backgroundColor: UIColor.themeBackgroundColor(),
+                NSAttributedStringKey.font: UIFont.setGotham(.large, weight: .bold)
+            ]
+        }
         return true
     }
 

@@ -8,9 +8,17 @@
 
 /* Begin PBXBuildFile section */
 		171655A438D35788D11F3183 /* Pods_Tesla.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1E26C7A44C63DB5DCE42DB35 /* Pods_Tesla.framework */; };
+		34E84AFF20E3646B008E2473 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34E84AFE20E3646B008E2473 /* MainViewController.swift */; };
+		34E84B0420E369ED008E2473 /* TabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34E84B0320E369ED008E2473 /* TabBarViewController.swift */; };
+		34E84B0820E36B89008E2473 /* LargeNavigationBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34E84B0720E36B89008E2473 /* LargeNavigationBar.swift */; };
+		34E84B0A20E37A24008E2473 /* BatteryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34E84B0920E37A24008E2473 /* BatteryView.swift */; };
+		34E84B0C20E38236008E2473 /* Car.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34E84B0B20E38236008E2473 /* Car.swift */; };
+		34E84B0F20E3933B008E2473 /* ControlViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34E84B0E20E3933B008E2473 /* ControlViewController.swift */; };
+		34E84B1120E39345008E2473 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34E84B1020E39345008E2473 /* ProfileViewController.swift */; };
+		34E84B1420E3ABDA008E2473 /* CenterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34E84B1320E3ABDA008E2473 /* CenterView.swift */; };
+		34E84B1820E3C44D008E2473 /* LoginBottomView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34E84B1720E3C44D008E2473 /* LoginBottomView.swift */; };
+		34E84B1B20E3C632008E2473 /* Const.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34E84B1A20E3C632008E2473 /* Const.swift */; };
 		34FBC73C20E2424400935AE5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34FBC73B20E2424400935AE5 /* AppDelegate.swift */; };
-		34FBC73E20E2424400935AE5 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34FBC73D20E2424400935AE5 /* ViewController.swift */; };
-		34FBC74120E2424400935AE5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 34FBC73F20E2424400935AE5 /* Main.storyboard */; };
 		34FBC74320E2424500935AE5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 34FBC74220E2424500935AE5 /* Assets.xcassets */; };
 		34FBC74620E2424500935AE5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 34FBC74420E2424500935AE5 /* LaunchScreen.storyboard */; };
 		34FBC75120E2424500935AE5 /* TeslaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34FBC75020E2424500935AE5 /* TeslaTests.swift */; };
@@ -22,6 +30,7 @@
 		34FBC78320E25CC300935AE5 /* Gotham-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 34FBC78020E25CC300935AE5 /* Gotham-Bold.otf */; };
 		34FBC78420E25CC300935AE5 /* Gotham-Book.otf in Resources */ = {isa = PBXBuildFile; fileRef = 34FBC78120E25CC300935AE5 /* Gotham-Book.otf */; };
 		34FBC78720E261CA00935AE5 /* UIFont.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34FBC78620E261CA00935AE5 /* UIFont.swift */; };
+		34FBC78B20E3180B00935AE5 /* UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34FBC78A20E3180B00935AE5 /* UIColor.swift */; };
 		5AA2F5D848EC34042121E4E4 /* Pods_TeslaTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E11D969F2639D27CDA880866 /* Pods_TeslaTests.framework */; };
 		638A30FA81C2ABBD01900BA6 /* Pods_TeslaUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EE1F10CD709CD7EF1D17BD4E /* Pods_TeslaUITests.framework */; };
 /* End PBXBuildFile section */
@@ -45,10 +54,18 @@
 
 /* Begin PBXFileReference section */
 		1E26C7A44C63DB5DCE42DB35 /* Pods_Tesla.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Tesla.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		34E84AFE20E3646B008E2473 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		34E84B0320E369ED008E2473 /* TabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarViewController.swift; sourceTree = "<group>"; };
+		34E84B0720E36B89008E2473 /* LargeNavigationBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LargeNavigationBar.swift; sourceTree = "<group>"; };
+		34E84B0920E37A24008E2473 /* BatteryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BatteryView.swift; sourceTree = "<group>"; };
+		34E84B0B20E38236008E2473 /* Car.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Car.swift; sourceTree = "<group>"; };
+		34E84B0E20E3933B008E2473 /* ControlViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ControlViewController.swift; sourceTree = "<group>"; };
+		34E84B1020E39345008E2473 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		34E84B1320E3ABDA008E2473 /* CenterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CenterView.swift; sourceTree = "<group>"; };
+		34E84B1720E3C44D008E2473 /* LoginBottomView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginBottomView.swift; sourceTree = "<group>"; };
+		34E84B1A20E3C632008E2473 /* Const.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Const.swift; sourceTree = "<group>"; };
 		34FBC73820E2424400935AE5 /* Tesla.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Tesla.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		34FBC73B20E2424400935AE5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		34FBC73D20E2424400935AE5 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		34FBC74020E2424400935AE5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		34FBC74220E2424500935AE5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		34FBC74520E2424500935AE5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		34FBC74720E2424500935AE5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -65,6 +82,7 @@
 		34FBC78020E25CC300935AE5 /* Gotham-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Gotham-Bold.otf"; sourceTree = "<group>"; };
 		34FBC78120E25CC300935AE5 /* Gotham-Book.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Gotham-Book.otf"; sourceTree = "<group>"; };
 		34FBC78620E261CA00935AE5 /* UIFont.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIFont.swift; sourceTree = "<group>"; };
+		34FBC78A20E3180B00935AE5 /* UIColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColor.swift; sourceTree = "<group>"; };
 		355BB1FF58B9212818C4BA9A /* Pods-TeslaUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TeslaUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TeslaUITests/Pods-TeslaUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		5BA31A304A1CE8C220FF993B /* Pods-Tesla.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Tesla.release.xcconfig"; path = "Pods/Target Support Files/Pods-Tesla/Pods-Tesla.release.xcconfig"; sourceTree = "<group>"; };
 		94AB0519166DDE5EF07FE43C /* Pods-TeslaUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TeslaUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-TeslaUITests/Pods-TeslaUITests.release.xcconfig"; sourceTree = "<group>"; };
@@ -116,6 +134,46 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		34E84AFD20E3644F008E2473 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				34E84AFE20E3646B008E2473 /* MainViewController.swift */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		34E84B0220E369BB008E2473 /* TabBarController */ = {
+			isa = PBXGroup;
+			children = (
+				34E84B0320E369ED008E2473 /* TabBarViewController.swift */,
+			);
+			path = TabBarController;
+			sourceTree = "<group>";
+		};
+		34E84B0D20E39320008E2473 /* Control */ = {
+			isa = PBXGroup;
+			children = (
+				34E84B0E20E3933B008E2473 /* ControlViewController.swift */,
+			);
+			path = Control;
+			sourceTree = "<group>";
+		};
+		34E84B1220E39348008E2473 /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				34E84B1020E39345008E2473 /* ProfileViewController.swift */,
+			);
+			path = Profile;
+			sourceTree = "<group>";
+		};
+		34E84B1920E3C5E3008E2473 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				34E84B1A20E3C632008E2473 /* Const.swift */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
 		34FBC72F20E2424300935AE5 = {
 			isa = PBXGroup;
 			children = (
@@ -144,6 +202,7 @@
 				34FBC76F20E2454900935AE5 /* Delegates */,
 				34FBC77020E245CF00935AE5 /* Protocols */,
 				34FBC78520E261A300935AE5 /* Extensions */,
+				34E84B1920E3C5E3008E2473 /* Utilities */,
 				34FBC76C20E2451500935AE5 /* Models */,
 				34FBC76D20E2451E00935AE5 /* Views */,
 				34FBC76E20E2452700935AE5 /* Controllers */,
@@ -195,7 +254,6 @@
 		34FBC76B20E244F700935AE5 /* Storyboards */ = {
 			isa = PBXGroup;
 			children = (
-				34FBC73F20E2424400935AE5 /* Main.storyboard */,
 				34FBC74420E2424500935AE5 /* LaunchScreen.storyboard */,
 			);
 			path = Storyboards;
@@ -204,6 +262,7 @@
 		34FBC76C20E2451500935AE5 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				34E84B0B20E38236008E2473 /* Car.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -211,6 +270,10 @@
 		34FBC76D20E2451E00935AE5 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				34E84B0720E36B89008E2473 /* LargeNavigationBar.swift */,
+				34E84B0920E37A24008E2473 /* BatteryView.swift */,
+				34E84B1320E3ABDA008E2473 /* CenterView.swift */,
+				34E84B1720E3C44D008E2473 /* LoginBottomView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -218,9 +281,12 @@
 		34FBC76E20E2452700935AE5 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				34E84B0220E369BB008E2473 /* TabBarController */,
 				34FBC77620E2515100935AE5 /* NavigationController */,
 				34FBC77320E250FC00935AE5 /* LoginViewController */,
-				34FBC73D20E2424400935AE5 /* ViewController.swift */,
+				34E84AFD20E3644F008E2473 /* Main */,
+				34E84B0D20E39320008E2473 /* Control */,
+				34E84B1220E39348008E2473 /* Profile */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -260,6 +326,7 @@
 			isa = PBXGroup;
 			children = (
 				34FBC78620E261CA00935AE5 /* UIFont.swift */,
+				34FBC78A20E3180B00935AE5 /* UIColor.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -386,7 +453,6 @@
 				34FBC74620E2424500935AE5 /* LaunchScreen.storyboard in Resources */,
 				34FBC77220E24F3A00935AE5 /* GoogleService-Info.plist in Resources */,
 				34FBC74320E2424500935AE5 /* Assets.xcassets in Resources */,
-				34FBC74120E2424400935AE5 /* Main.storyboard in Resources */,
 				34FBC78420E25CC300935AE5 /* Gotham-Book.otf in Resources */,
 				34FBC78220E25CC300935AE5 /* Gotham-Light.otf in Resources */,
 			);
@@ -496,11 +562,21 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				34E84B0420E369ED008E2473 /* TabBarViewController.swift in Sources */,
+				34E84B0820E36B89008E2473 /* LargeNavigationBar.swift in Sources */,
+				34E84B0C20E38236008E2473 /* Car.swift in Sources */,
+				34E84B0A20E37A24008E2473 /* BatteryView.swift in Sources */,
+				34E84B1420E3ABDA008E2473 /* CenterView.swift in Sources */,
+				34E84B1120E39345008E2473 /* ProfileViewController.swift in Sources */,
 				34FBC77820E2517900935AE5 /* RootNavigationViewController.swift in Sources */,
+				34FBC78B20E3180B00935AE5 /* UIColor.swift in Sources */,
 				34FBC77520E2514C00935AE5 /* LoginViewController.swift in Sources */,
-				34FBC73E20E2424400935AE5 /* ViewController.swift in Sources */,
+				34E84B1820E3C44D008E2473 /* LoginBottomView.swift in Sources */,
+				34E84B0F20E3933B008E2473 /* ControlViewController.swift in Sources */,
+				34E84AFF20E3646B008E2473 /* MainViewController.swift in Sources */,
 				34FBC78720E261CA00935AE5 /* UIFont.swift in Sources */,
 				34FBC73C20E2424400935AE5 /* AppDelegate.swift in Sources */,
+				34E84B1B20E3C632008E2473 /* Const.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -536,14 +612,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		34FBC73F20E2424400935AE5 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				34FBC74020E2424400935AE5 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		34FBC74420E2424500935AE5 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (

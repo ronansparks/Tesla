@@ -9,10 +9,10 @@
 import UIKit
 
 enum FontSize: CGFloat {
-    case large = 34
+    case large = 32
     case big = 24
-    case middle = 18
-    case small = 14
+    case middle = 20
+    case small = 16
 }
 
 enum FontWeight: String {
