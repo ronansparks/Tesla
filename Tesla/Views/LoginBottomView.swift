@@ -7,8 +7,17 @@
 //
 
 import UIKit
+import RxSwift
+import RxCocoa
 
 class LoginBottomView: UIView {
+    
+    var countryButton: UIButton!
+    var numberTextField: UITextField!
+    var msgButton: UIButton!
+    var minimumNumber = 3
+    
+    let bag = DisposeBag()
 
     override init(frame: CGRect) {
         super.init(frame: frame)
@@ -33,7 +42,7 @@ class LoginBottomView: UIView {
         titleLabel.text = "Join Tesla"
         
         // 国旗和区号
-        let countryButton = UIButton()
+        countryButton = UIButton()
         self.addSubview(countryButton)
         countryButton.snp.makeConstraints { make in
             make.top.equalTo(titleLabel.snp.bottom).offset(UNIVERSAL_MARGIN)
@@ -50,7 +59,7 @@ class LoginBottomView: UIView {
         countryButton.imageEdgeInsets = UIEdgeInsetsMake(0, -UNIVERSAL_MARGIN_COMPACT, 0, 0)
         
         // 手机号
-        let numberTextField = UITextField()
+        numberTextField = UITextField()
         self.addSubview(numberTextField)
         numberTextField.snp.makeConstraints { make in
             make.top.equalTo(countryButton)
@@ -61,15 +70,27 @@ class LoginBottomView: UIView {
         numberTextField.backgroundColor = UIColor.themeLightGray()
         numberTextField.font = UIFont.setGotham(.middle)
         numberTextField.placeholder = "Phone Number"
+        numberTextField.keyboardType = .numberPad
+        numberTextField.rx.controlEvent(.editingDidEndOnExit)
+            .subscribe(onNext: { [weak self] _ in
+                self?.numberTextField.resignFirstResponder()
+            })
+            .disposed(by: bag)
         
         // 发送验证码
-        let msgButton = UIButton()
+        msgButton = UIButton()
         self.addSubview(msgButton)
         msgButton.snp.makeConstraints { make in
             make.top.equalTo(numberTextField.snp.bottom).offset(UNIVERSAL_MARGIN)
             make.right.equalToSuperview().offset(-UNIVERSAL_MARGIN)
         }
         msgButton.setImage(UIImage(named: "send_message"), for: .normal)
+        // 绑定，至少输入3位数字，可点击按钮
+        let validNumber = numberTextField.rx.text.orEmpty
+            .map { $0.count >= self.minimumNumber }
+            .share(replay: 1)
+        validNumber.bind(to: msgButton.rx.isEnabled)
+            .disposed(by: bag)
         
         // 选择其他方式登录
         let socialButton = UIButton()
