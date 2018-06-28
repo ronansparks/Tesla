@@ -10,6 +10,7 @@
 		171655A438D35788D11F3183 /* Pods_Tesla.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1E26C7A44C63DB5DCE42DB35 /* Pods_Tesla.framework */; };
 		3451844520E4730500CC67A6 /* PhoneCodeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3451844420E4730500CC67A6 /* PhoneCodeViewController.swift */; };
 		3451844720E474F700CC67A6 /* PhoneCodeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3451844620E474F700CC67A6 /* PhoneCodeView.swift */; };
+		3469EEA520E4CEA60060A202 /* CenterButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3469EEA420E4CEA60060A202 /* CenterButton.swift */; };
 		34E84AFF20E3646B008E2473 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34E84AFE20E3646B008E2473 /* MainViewController.swift */; };
 		34E84B0420E369ED008E2473 /* TabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34E84B0320E369ED008E2473 /* TabBarViewController.swift */; };
 		34E84B0820E36B89008E2473 /* LargeNavigationBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34E84B0720E36B89008E2473 /* LargeNavigationBar.swift */; };
@@ -58,6 +59,7 @@
 		1E26C7A44C63DB5DCE42DB35 /* Pods_Tesla.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Tesla.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		3451844420E4730500CC67A6 /* PhoneCodeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhoneCodeViewController.swift; sourceTree = "<group>"; };
 		3451844620E474F700CC67A6 /* PhoneCodeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhoneCodeView.swift; sourceTree = "<group>"; };
+		3469EEA420E4CEA60060A202 /* CenterButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CenterButton.swift; sourceTree = "<group>"; };
 		34E84AFE20E3646B008E2473 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		34E84B0320E369ED008E2473 /* TabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarViewController.swift; sourceTree = "<group>"; };
 		34E84B0720E36B89008E2473 /* LargeNavigationBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LargeNavigationBar.swift; sourceTree = "<group>"; };
@@ -287,6 +289,7 @@
 				34E84B1320E3ABDA008E2473 /* CenterView.swift */,
 				34E84B1720E3C44D008E2473 /* LoginBottomView.swift */,
 				3451844620E474F700CC67A6 /* PhoneCodeView.swift */,
+				3469EEA420E4CEA60060A202 /* CenterButton.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -590,6 +593,7 @@
 				34E84B0F20E3933B008E2473 /* ControlViewController.swift in Sources */,
 				34E84AFF20E3646B008E2473 /* MainViewController.swift in Sources */,
 				3451844520E4730500CC67A6 /* PhoneCodeViewController.swift in Sources */,
+				3469EEA520E4CEA60060A202 /* CenterButton.swift in Sources */,
 				34FBC78720E261CA00935AE5 /* UIFont.swift in Sources */,
 				34FBC73C20E2424400935AE5 /* AppDelegate.swift in Sources */,
 				34E84B1B20E3C632008E2473 /* Const.swift in Sources */,

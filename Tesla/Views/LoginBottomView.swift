@@ -38,7 +38,7 @@ class LoginBottomView: UIView, UITextFieldDelegate {
             make.top.left.equalToSuperview().offset(UNIVERSAL_MARGIN)
             
         }
-        titleLabel.font = UIFont.setGotham(.large, weight: .bold)
+        titleLabel.font = UIFont.setGotham(.largeTitle, weight: .bold)
         titleLabel.text = "Join Tesla"
         
         // 国旗和区号
@@ -54,7 +54,7 @@ class LoginBottomView: UIView, UITextFieldDelegate {
         countryButton.setImage(UIImage(named: "flag_china"), for: .normal)
         countryButton.setTitle("+86", for: .normal)
         countryButton.setTitleColor(UIColor.themeDarkGray(), for: .normal)
-        countryButton.titleLabel?.font = UIFont.setGotham(.middle)
+        countryButton.titleLabel?.font = UIFont.setGotham(.title)
         countryButton.titleEdgeInsets = UIEdgeInsetsMake(0, 0, 0, -UNIVERSAL_MARGIN_COMPACT)
         countryButton.imageEdgeInsets = UIEdgeInsetsMake(0, -UNIVERSAL_MARGIN_COMPACT, 0, 0)
         
@@ -68,7 +68,7 @@ class LoginBottomView: UIView, UITextFieldDelegate {
             make.height.equalTo(UNIVERSAL_RADIUS_COMPACT)
         }
         numberTextField.backgroundColor = UIColor.themeLightGray()
-        numberTextField.font = UIFont.setGotham(.middle)
+        numberTextField.font = UIFont.setGotham(.title)
         numberTextField.placeholder = "随便输入几位数"
         numberTextField.keyboardType = .numberPad
         numberTextField.delegate = self
@@ -101,7 +101,7 @@ class LoginBottomView: UIView, UITextFieldDelegate {
             make.top.equalTo(msgButton.snp.bottom).offset(UNIVERSAL_MARGIN)
         }
         socialButton.setTitle("Connect using another way", for: .normal)
-        socialButton.titleLabel?.font = UIFont.setGotham(.small, weight: .light)
+        socialButton.titleLabel?.font = UIFont.setGotham(.body, weight: .light)
         socialButton.setTitleColor(UIColor.themeDarkGray(), for: .normal)
     }
 }

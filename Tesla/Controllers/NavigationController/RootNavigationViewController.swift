@@ -13,10 +13,6 @@ class RootNavigationViewController: UINavigationController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-//        let leftBar = self.navigationItem.leftBarButtonItem
-//        leftBar?.tintColor = UIColor.darkGray
-//        self.navigationItem.leftBarButtonItem = leftBar
-        
     }
 
 }

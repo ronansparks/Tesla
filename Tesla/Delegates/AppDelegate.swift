@@ -17,11 +17,13 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
         window = UIWindow(frame: UIScreen.main.bounds)
+        // 正常流程
         let loginVC = LoginViewController()
         let navController = RootNavigationViewController(rootViewController: loginVC)
-//        let phoneCodeVC = PhoneCodeViewController()
-//        let navController = RootNavigationViewController(rootViewController: phoneCodeVC)
         window?.rootViewController = navController
+        
+//        let tabVC = TabBarViewController()
+//        window?.rootViewController = tabVC
         window?.makeKeyAndVisible()
         
         if #available(iOS 11.0, *) {
@@ -34,7 +36,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             // 大标题样式
             UINavigationBar.appearance().largeTitleTextAttributes = [
                 NSAttributedStringKey.backgroundColor: UIColor.themeBackgroundColor(),
-                NSAttributedStringKey.font: UIFont.setGotham(.large, weight: .bold)
+                NSAttributedStringKey.font: UIFont.setGotham(.largeTitle, weight: .bold)
             ]
         }
         return true

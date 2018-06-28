@@ -12,7 +12,6 @@ class TabBarViewController: UITabBarController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
         addChildViewController()
     }
     
@@ -31,17 +30,3 @@ class TabBarViewController: UITabBarController {
     }
     
 }
-
-//private func setChildViewController(_ childViewController: UIViewController, title: String, imageName: String) {
-//    if UserDefaults.standard.bool(forKey: kIsNight) {
-//        setNightChildController(controller: childViewController, imageName: imageName)
-//    }
-//    else {
-//        setDayChildController(controller: childViewController, imageName: imageName)
-//    }
-//    childViewController.title = title
-//    childViewController.tabBarItem.title = ""
-//
-//    let navVC = RootNavigationController(rootViewController: childViewController)
-//    addChildViewController(navVC)
-//}

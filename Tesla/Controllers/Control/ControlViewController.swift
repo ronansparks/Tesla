@@ -15,6 +15,11 @@ class ControlViewController: UIViewController {
         view.backgroundColor = UIColor.themeBackgroundColor()
         navigationItem.title = "Control"
 
+        setupSubviews()
+    }
+    
+    func setupSubviews() {
+        
     }
 
 }

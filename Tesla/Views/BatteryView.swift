@@ -30,7 +30,7 @@ class BatteryView: UIView {
         
         titleLabel = UILabel()
         addSubview(titleLabel)
-        titleLabel.font = UIFont.setGotham(.big)
+        titleLabel.font = UIFont.setGotham(.middleTitle)
     }
     
     required init?(coder aDecoder: NSCoder) {

@@ -61,4 +61,8 @@ extension UIColor {
     static func themeYellow() -> UIColor {
         return UIColor("#FFEA00")
     }
+    
+    static func themeShadowColor() -> UIColor {
+        return UIColor("#666666")
+    }
  }

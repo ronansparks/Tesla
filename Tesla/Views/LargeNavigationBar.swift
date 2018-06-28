@@ -39,7 +39,7 @@ class LargeNavigationBar: UINavigationBar {
             make.right.equalToSuperview().offset(-20)
             make.bottom.equalToSuperview().offset(-10)
         }
-        titleLabel.font = UIFont.setGotham(.large, weight: .bold)
+        titleLabel.font = UIFont.setGotham(.largeTitle, weight: .bold)
         titleLabel.textColor = UIColor.themeDarkGray()
         titleLabel.text = title
         

@@ -48,50 +48,47 @@ class MainViewController: UIViewController {
             make.height.equalTo(CellHeight)
         }
         
-        // Conditioner
-//        let frame = CGRect(x: 0, y: 0, width: UIScreen.main.bounds.width, height: <#T##CGFloat#>)
-//        let centerView = CenterView(frame: <#T##CGRect#>, items: <#T##[ButtonItem]#>)
-//        let conditionerButton = UIButton()
-//        view.addSubview(conditionerButton)
-//        conditionerButton.snp.makeConstraints { make in
-//            make.top.equalTo(batteryView.snp.bottom).offset(20)
-//            make.height.equalTo(92)
-//            let imageSpacing = (UIScreen.main.bounds.width - imageWidth * 2) / 4
-//            make.left.equalToSuperview().offset(imageSpacing)
-//        }
-//        conditionerButton.setImage(UIImage(named: "home_fan_off"), for: .normal)
-//        conditionerButton.setImage(UIImage(named: "home_fan_on"), for: .selected)
-//        let conditionerLabel = UILabel()
-//        view.addSubview(conditionerLabel)
-//        conditionerLabel.snp.makeConstraints { make in
-//            make.top.equalTo(conditionerButton.snp.bottom).offset(10)
-//            make.centerX.equalTo(conditionerButton)
-//        }
-//        conditionerLabel.font = UIFont.setGotham(.big)
-//        conditionerLabel.text = "26 ℃"
-//
-//        let lockButton = UIButton()
-//        view.addSubview(lockButton)
-//        lockButton.snp.makeConstraints { make in
-//            make.top.equalTo(batteryView.snp.bottom).offset(20)
-//            make.height.equalTo(92)
-//            let imageSpacing = (UIScreen.main.bounds.width - imageWidth * 2) / 4
-//            make.right.equalToSuperview().offset(-imageSpacing)
-//        }
-//        lockButton.setImage(UIImage(named: "home_lock_on"), for: .normal)
-//        lockButton.setImage(UIImage(named: "home_lock_off"), for: .selected)
-//        let lockLabel = UILabel()
-//        view.addSubview(lockLabel)
-//        lockLabel.snp.makeConstraints { make in
-//            make.top.equalTo(lockButton.snp.bottom).offset(10)
-//            make.centerX.equalTo(lockButton)
-//        }
-//        lockLabel.font = UIFont.setGotham(.big)
-//        lockLabel.text = "Unlocked"
+        // 空调按钮
+        let fanContent = ButtonContent(normalImage: "home_fan_off", normalText: "26 ℃", selectedImage: "home_fan_on", selectedText: "20℃ xxxxx")
+        let fanFrame = CGRect(x: 0, y: 0, width: SCREEN_WIDTH / 2, height: 129)
+        let fanButton = CenterButton(frame: fanFrame, content: fanContent)
+        view.addSubview(fanButton)
+        fanButton.snp.makeConstraints { make in
+            make.top.equalTo(batteryView.snp.bottom).offset(UNIVERSAL_MARGIN)
+            make.centerX.equalTo(SCREEN_WIDTH / 4)
+        }
+        
+        // 锁车/解锁
+        let lockContent = ButtonContent(normalImage: "home_lock", normalText: "Locked", selectedImage: "home_unlock", selectedText: "unlocked")
+        let lockFrame = CGRect(x: 0, y: 0, width: SCREEN_WIDTH / 2, height: 129)
+        let lockButton = CenterButton(frame: lockFrame, content: lockContent)
+        view.addSubview(lockButton)
+        lockButton.snp.makeConstraints { make in
+            make.top.equalTo(batteryView.snp.bottom).offset(UNIVERSAL_MARGIN)
+            make.centerX.equalTo(SCREEN_WIDTH / 4 * 3)
+        }
+        
+        // 地图
+        let mapView = UIView()
+        view.addSubview(mapView)
+        mapView.snp.makeConstraints { make in
+            make.left.right.equalToSuperview()
+            make.height.equalTo(UNIVERSAL_RADIUS)
+            make.bottom.equalToSuperview().offset(-(self.tabBarController?.tabBar.frame.size.height)!)
+        }
+        mapView.backgroundColor = UIColor.themeBackgroundColor()
+        mapView.layer.shadowColor = UIColor.themeShadowColor().cgColor
+        mapView.layer.shadowOffset = CGSize(width: 0, height: 2)
+        mapView.layer.shadowOpacity = 0.4
+        mapView.layer.shadowRadius = 4.0
     }
     
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
         batteryView.setBattery(car: myCar)
+    }
+    
+    deinit {
+        print("MainViewController deinit")
     }
 }

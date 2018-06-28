@@ -42,7 +42,7 @@ class PhoneCodeView: UIView, UITextFieldDelegate {
             make.center.equalToSuperview()
         }
         textField.textAlignment = .center
-        textField.font = UIFont.setGotham(.middle)
+        textField.font = UIFont.setGotham(.title)
         textField.keyboardType = .numberPad
         textField.backgroundColor = UIColor.themeBackgroundColor()
         textField.becomeFirstResponder()

@@ -40,7 +40,7 @@ class PhoneCodeViewController: UIViewController {
         }
         resendButton.setTitleColor(UIColor.themeGreen(), for: .normal)
         resendButton.setTitleColor(UIColor.themeRed(), for: .disabled)
-        resendButton.titleLabel?.font = UIFont.setGotham(.small, weight: .book)
+        resendButton.titleLabel?.font = UIFont.setGotham(.body, weight: .book)
         resendButton.backgroundColor = UIColor.themeBackgroundColor()
         resendButton.layer.cornerRadius = UNIVERSAL_CORNER_RADIUS
         resendButton.layer.masksToBounds = true
@@ -78,7 +78,7 @@ class PhoneCodeViewController: UIViewController {
             DispatchQueue.main.async {
                 self.resendButton.setTitle("Resend (\(count)s)", for: .normal)
             }
-            print("timer: \(count)")
+//            print("timer: \(count)")
             if count <= 0 {
                 self.timer.cancel()
                 DispatchQueue.main.async {
