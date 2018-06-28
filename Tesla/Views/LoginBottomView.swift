@@ -10,7 +10,7 @@ import UIKit
 import RxSwift
 import RxCocoa
 
-class LoginBottomView: UIView {
+class LoginBottomView: UIView, UITextFieldDelegate {
     
     var countryButton: UIButton!
     var numberTextField: UITextField!
@@ -69,8 +69,9 @@ class LoginBottomView: UIView {
         }
         numberTextField.backgroundColor = UIColor.themeLightGray()
         numberTextField.font = UIFont.setGotham(.middle)
-        numberTextField.placeholder = "Phone Number"
+        numberTextField.placeholder = "随便输入几位数"
         numberTextField.keyboardType = .numberPad
+        numberTextField.delegate = self
         numberTextField.rx.controlEvent(.editingDidEndOnExit)
             .subscribe(onNext: { [weak self] _ in
                 self?.numberTextField.resignFirstResponder()
@@ -102,5 +103,19 @@ class LoginBottomView: UIView {
         socialButton.setTitle("Connect using another way", for: .normal)
         socialButton.titleLabel?.font = UIFont.setGotham(.small, weight: .light)
         socialButton.setTitleColor(UIColor.themeDarkGray(), for: .normal)
+    }
+}
+
+extension LoginBottomView {
+    // 过滤非数字
+    func textField(_ textField: UITextField, shouldChangeCharactersIn range: NSRange, replacementString string: String) -> Bool {
+        // 如果是删除符号，不处理
+        if string.isEmpty {
+            return true
+        }
+        let scan = Scanner(string: string)
+        var intValue = 0
+        let result = scan.scanInt(&intValue) && scan.isAtEnd
+        return result
     }
 }

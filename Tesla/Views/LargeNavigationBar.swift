@@ -40,6 +40,7 @@ class LargeNavigationBar: UINavigationBar {
             make.bottom.equalToSuperview().offset(-10)
         }
         titleLabel.font = UIFont.setGotham(.large, weight: .bold)
+        titleLabel.textColor = UIColor.themeDarkGray()
         titleLabel.text = title
         
         let leftButton = UIButton()

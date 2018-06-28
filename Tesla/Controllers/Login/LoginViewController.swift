@@ -24,7 +24,6 @@ class LoginViewController: UIViewController {
         super.viewDidLoad()
 
         view.backgroundColor = UIColor.black
-        navigationController?.navigationBar.isHidden = true
         
         scrollView = UIScrollView(frame: view.bounds)
         view.addSubview(scrollView)
@@ -37,6 +36,14 @@ class LoginViewController: UIViewController {
         setupTopView()
         setupBottomView()
         setupNotification()
+        
+        // 处理刘海问题
+        if #available(iOS 11.0, *) {
+            scrollView.contentInsetAdjustmentBehavior = .never
+        }
+        else {
+            automaticallyAdjustsScrollViewInsets = false
+        }
     
     }
     
@@ -75,10 +82,9 @@ class LoginViewController: UIViewController {
             .disposed(by: bag)
         
         bottomView.msgButton.rx.tap
-            .subscribe(onNext: { _ in
-                print("jump")
-                let tabController = TabBarViewController()
-                UIApplication.shared.keyWindow?.rootViewController = tabController
+            .subscribe(onNext: { [weak self] _ in
+                let phoneCodeVC = PhoneCodeViewController()
+                self?.navigationController?.pushViewController(phoneCodeVC, animated: true)
             })
             .disposed(by: bag)
     }
@@ -101,6 +107,11 @@ class LoginViewController: UIViewController {
                 self?.scrollView.contentOffset = CGPoint(x: 0, y: 0)
             })
             .disposed(by: bag)
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        navigationController?.navigationBar.isHidden = true
     }
     
     deinit {

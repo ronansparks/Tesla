@@ -13,7 +13,10 @@ class RootNavigationViewController: UINavigationController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-//        navigationBar.isHidden = true
+//        let leftBar = self.navigationItem.leftBarButtonItem
+//        leftBar?.tintColor = UIColor.darkGray
+//        self.navigationItem.leftBarButtonItem = leftBar
+        
     }
 
 }
