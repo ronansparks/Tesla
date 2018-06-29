@@ -46,6 +46,10 @@ extension UIColor {
         return UIColor("#F7F7F7")
     }
     
+    static func themeMidGray() -> UIColor {
+        return UIColor("#999999")
+    }
+    
     static func themeDarkGray() -> UIColor {
         return UIColor("#333333")
     }

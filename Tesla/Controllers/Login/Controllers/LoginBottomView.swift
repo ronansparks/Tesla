@@ -102,7 +102,7 @@ class LoginBottomView: UIView, UITextFieldDelegate {
         }
         socialButton.setTitle("Connect using another way", for: .normal)
         socialButton.titleLabel?.font = UIFont.setGotham(.body, weight: .light)
-        socialButton.setTitleColor(UIColor.themeDarkGray(), for: .normal)
+        socialButton.setTitleColor(UIColor.themeMidGray(), for: .normal)
     }
 }
 

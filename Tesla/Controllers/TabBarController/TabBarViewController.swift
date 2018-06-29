@@ -18,7 +18,8 @@ class TabBarViewController: UITabBarController {
     private func addChildViewController() {
         setChildViewController(MainViewController(), imageName: "tabbar_home")
         setChildViewController(ControlViewController(), imageName: "tabbar_control")
-        setChildViewController(ProfileViewController(), imageName: "tabbar_profile")
+//        setChildViewController(ProfileViewController(), imageName: "tabbar_profile")
+        setChildViewController(UserInfoTableViewController(), imageName: "tabbar_profile")
     }
     
     private func setChildViewController(_ controller: UIViewController, title: String = "", imageName: String) {
