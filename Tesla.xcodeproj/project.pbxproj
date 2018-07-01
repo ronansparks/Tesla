@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		171655A438D35788D11F3183 /* Pods_Tesla.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1E26C7A44C63DB5DCE42DB35 /* Pods_Tesla.framework */; };
+		340F590120E8991D0001F13B /* ARViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 340F590020E8991D0001F13B /* ARViewController.swift */; };
+		340F590320E89A010001F13B /* art.scnassets in Resources */ = {isa = PBXBuildFile; fileRef = 340F590220E89A010001F13B /* art.scnassets */; };
+		340F592E20E8E0970001F13B /* SCNNodeHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 340F592D20E8E0970001F13B /* SCNNodeHelper.swift */; };
 		3451844520E4730500CC67A6 /* PhoneCodeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3451844420E4730500CC67A6 /* PhoneCodeViewController.swift */; };
 		3451844720E474F700CC67A6 /* PhoneCodeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3451844620E474F700CC67A6 /* PhoneCodeView.swift */; };
 		3469EEA520E4CEA60060A202 /* CenterButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3469EEA420E4CEA60060A202 /* CenterButton.swift */; };
@@ -64,6 +67,9 @@
 
 /* Begin PBXFileReference section */
 		1E26C7A44C63DB5DCE42DB35 /* Pods_Tesla.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Tesla.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		340F590020E8991D0001F13B /* ARViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARViewController.swift; sourceTree = "<group>"; };
+		340F590220E89A010001F13B /* art.scnassets */ = {isa = PBXFileReference; lastKnownFileType = wrapper.scnassets; path = art.scnassets; sourceTree = "<group>"; };
+		340F592D20E8E0970001F13B /* SCNNodeHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SCNNodeHelper.swift; sourceTree = "<group>"; };
 		3451844420E4730500CC67A6 /* PhoneCodeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhoneCodeViewController.swift; sourceTree = "<group>"; };
 		3451844620E474F700CC67A6 /* PhoneCodeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhoneCodeView.swift; sourceTree = "<group>"; };
 		3469EEA420E4CEA60060A202 /* CenterButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CenterButton.swift; sourceTree = "<group>"; };
@@ -219,6 +225,7 @@
 			children = (
 				34753AA520E5C51200D0C669 /* Views */,
 				34E84AFE20E3646B008E2473 /* MainViewController.swift */,
+				340F590020E8991D0001F13B /* ARViewController.swift */,
 			);
 			path = Main;
 			sourceTree = "<group>";
@@ -253,6 +260,7 @@
 			isa = PBXGroup;
 			children = (
 				34E84B1A20E3C632008E2473 /* Const.swift */,
+				340F592D20E8E0970001F13B /* SCNNodeHelper.swift */,
 			);
 			path = Utilities;
 			sourceTree = "<group>";
@@ -321,6 +329,7 @@
 				34FBC78020E25CC300935AE5 /* Gotham-Bold.otf */,
 				34FBC78120E25CC300935AE5 /* Gotham-Book.otf */,
 				34FBC77F20E25CC300935AE5 /* Gotham-Light.otf */,
+				340F590220E89A010001F13B /* art.scnassets */,
 				34FBC74220E2424500935AE5 /* Assets.xcassets */,
 			);
 			path = Resources;
@@ -538,6 +547,7 @@
 				34FBC78320E25CC300935AE5 /* Gotham-Bold.otf in Resources */,
 				34FBC74620E2424500935AE5 /* LaunchScreen.storyboard in Resources */,
 				34FBC77220E24F3A00935AE5 /* GoogleService-Info.plist in Resources */,
+				340F590320E89A010001F13B /* art.scnassets in Resources */,
 				34FBC74320E2424500935AE5 /* Assets.xcassets in Resources */,
 				34FBC78420E25CC300935AE5 /* Gotham-Book.otf in Resources */,
 				34FBC78220E25CC300935AE5 /* Gotham-Light.otf in Resources */,
@@ -657,12 +667,14 @@
 				34E84B1120E39345008E2473 /* ProfileViewController.swift in Sources */,
 				34753AB220E5D80600D0C669 /* UITableView.swift in Sources */,
 				34FBC77820E2517900935AE5 /* RootNavigationViewController.swift in Sources */,
+				340F590120E8991D0001F13B /* ARViewController.swift in Sources */,
 				34753AB620E5DF5000D0C669 /* RightDetailCell.swift in Sources */,
 				34FBC78B20E3180B00935AE5 /* UIColor.swift in Sources */,
 				3451844720E474F700CC67A6 /* PhoneCodeView.swift in Sources */,
 				34753AB420E5D87700D0C669 /* RegisterCellProtocol.swift in Sources */,
 				34753AA920E5C57800D0C669 /* UserInfoCell.swift in Sources */,
 				34FBC77520E2514C00935AE5 /* LoginViewController.swift in Sources */,
+				340F592E20E8E0970001F13B /* SCNNodeHelper.swift in Sources */,
 				34E84B1820E3C44D008E2473 /* LoginBottomView.swift in Sources */,
 				34E84B0F20E3933B008E2473 /* ControlViewController.swift in Sources */,
 				34E84AFF20E3646B008E2473 /* MainViewController.swift in Sources */,
