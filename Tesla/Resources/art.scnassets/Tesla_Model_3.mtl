@@ -1,0 +1,265 @@
+# 
+# Wavefront material file
+# Converted by the DEEP Exploration  Deep Exploration 6.1 x64 6.1.2.6638
+# Right Hemisphere, LTD
+# http://www.righthemisphere.com/
+# 
+
+newmtl black_m
+Ka 0.0862745 0.0862745 0.0862745
+Kd 0.0862745 0.0862745 0.0862745
+Ks 0.9 0.9 0.9
+illum 2
+Ns 6.06287
+map_Kd 
+map_bump 
+bump 
+map_opacity 
+map_d 
+refl 
+map_kS 
+map_kA 
+map_Ns 
+
+newmtl black
+Ka 0 0 0
+Kd 0 0 0
+Ks 0.9 0.9 0.9
+illum 2
+Ns 4
+map_Kd 
+map_bump 
+bump 
+map_opacity 
+map_d 
+refl 
+map_kS 
+map_kA 
+map_Ns 
+
+newmtl d_glass
+Ka 0.105882 0.105882 0.105882
+Kd 0.105882 0.105882 0.105882
+Ks 0.9 0.9 0.9
+illum 2
+Ns 16
+d 0.64
+map_Kd 
+map_bump 
+bump 
+map_opacity 
+map_d 
+refl 
+map_kS 
+map_kA 
+map_Ns 
+
+newmtl carbon
+Ka 0.588235 0.588235 0.588235
+Kd 1 1 1
+Ks 0.9 0.9 0.9
+illum 2
+Ns 6.49802
+map_Kd carbon.png
+map_bump 
+bump 
+map_opacity 
+map_d 
+refl 
+map_kS 
+map_kA 
+map_Ns 
+
+newmtl chrome
+Ka 0.796079 0.811765 0.839216
+Kd 0.796079 0.811765 0.839216
+Ks 0.9 0.9 0.9
+illum 2
+Ns 6.49802
+map_Kd 
+map_bump 
+bump 
+map_opacity 
+map_d 
+refl 
+map_kS 
+map_kA 
+map_Ns 
+
+newmtl gum
+Ka 0.235294 0.235294 0.235294
+Kd 0.235294 0.235294 0.235294
+Ks 0.9 0.9 0.9
+illum 2
+Ns 6.06287
+map_Kd 
+map_bump 
+bump 
+map_opacity 
+map_d 
+refl 
+map_kS 
+map_kA 
+map_Ns 
+
+newmtl red
+Ka 0.658824 0 0
+Kd 0.658824 0 0
+Ks 0.9 0.9 0.9
+illum 2
+Ns 13.9288
+map_Kd 
+map_bump 
+bump 
+map_opacity 
+map_d 
+refl 
+map_kS 
+map_kA 
+map_Ns 
+
+newmtl orange
+Ka 0.92549 0.458824 0
+Kd 0.92549 0.458824 0
+Ks 0.9 0.9 0.9
+illum 2
+Ns 7.46426
+map_Kd 
+map_bump 
+bump 
+map_opacity 
+map_d 
+refl 
+map_kS 
+map_kA 
+map_Ns 
+
+newmtl body
+Ka 0.631373 0.639216 0.658824
+Kd 0.631373 0.639216 0.658824
+Ks 0.9 0.9 0.9
+illum 2
+Ns 7.46426
+map_Kd 
+map_bump 
+bump 
+map_opacity 
+map_d 
+refl 
+map_kS 
+map_kA 
+map_Ns 
+
+newmtl tire
+Ka 0.235294 0.235294 0.235294
+Kd 0.235294 0.235294 0.235294
+Ks 0.9 0.9 0.9
+illum 2
+Ns 6.06287
+map_Kd 
+map_bump tire23b.png
+bump tire23b.png
+map_opacity 
+map_d 
+refl 
+map_kS 
+map_kA 
+map_Ns 
+
+newmtl silver
+Ka 0.862745 0.862745 0.862745
+Kd 0.862745 0.862745 0.862745
+Ks 0.9 0.9 0.9
+illum 2
+Ns 25.9921
+map_Kd 
+map_bump 
+bump 
+map_opacity 
+map_d 
+refl 
+map_kS 
+map_kA 
+map_Ns 
+
+newmtl brakes
+Ka 0.862745 0.862745 0.862745
+Kd 1 1 1
+Ks 0.9 0.9 0.9
+illum 2
+Ns 25.9921
+map_Kd brakes_03.png
+map_bump 
+bump 
+map_opacity 
+map_d 
+refl 
+map_kS 
+map_kA 
+map_Ns 
+
+newmtl glass
+Ka 0.0941177 0.105882 0.121569
+Kd 0.0941177 0.105882 0.121569
+Ks 0.9 0.9 0.9
+illum 2
+Ns 8
+d 0.58
+map_Kd 
+map_bump 
+bump 
+map_opacity 
+map_d 
+refl 
+map_kS 
+map_kA 
+map_Ns 
+
+newmtl plate
+Ka 0.235294 0.235294 0.235294
+Kd 1 1 1
+Ks 0.9 0.9 0.9
+illum 2
+Ns 6.06287
+map_Kd plate0.png
+map_bump 
+bump 
+map_opacity 
+map_d 
+refl 
+map_kS 
+map_kA 
+map_Ns 
+
+newmtl r_glass
+Ka 0.588235 0 0
+Kd 0.588235 0 0
+Ks 0.9 0.9 0.9
+illum 2
+Ns 8
+d 0.46
+map_Kd 
+map_bump 
+bump 
+map_opacity 
+map_d 
+refl 
+map_kS 
+map_kA 
+map_Ns 
+
+newmtl black_gradient
+Ka 0 0 0
+Kd 0 0 0
+Ks 0.9 0.9 0.9
+illum 2
+Ns 2.14355
+map_Kd 
+map_bump 
+bump 
+map_opacity glass_gradient.png
+map_d glass_gradient.png
+refl 
+map_kS 
+map_kA 
+map_Ns 
