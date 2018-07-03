@@ -113,8 +113,15 @@ class ARViewController: UIViewController, ARSCNViewDelegate {
     
     // 创建 Tesla Node
     func makeTesla() -> SCNNode {
+        // 相机
+        let cameraNode = SCNNode()
+        cameraNode.camera = SCNCamera()
+        cameraNode.camera?.zFar = 600
+        cameraNode.position = SCNVector3Make(0, 20, 200)
+        
         let tesla = SCNNode()
         let scene = SCNScene(named: "art.scnassets/Tesla_Model_3.dae")
+        scene?.rootNode.addChildNode(cameraNode)
         
         let rootNode = scene?.rootNode
         rootNode?.scale = SCNVector3Make(0.01, 0.01, 0.01)

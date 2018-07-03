@@ -68,11 +68,11 @@ class HomeView: UIView {
         let cameraNode = SCNNode()
         cameraNode.camera = SCNCamera()
         cameraNode.camera?.zFar = 600
-        cameraNode.position = SCNVector3Make(0, 100, 200)
+        cameraNode.position = SCNVector3Make(0, 20, 150)
         
         let scene = SCNScene(named: "art.scnassets/Tesla_Model_3.dae")
         scene?.rootNode.scale = SCNVector3Make(2, 2, 2)
-        
+        scene?.rootNode.addChildNode(cameraNode)
         sceneView = SCNView()
         self.addSubview(sceneView)
         sceneView.snp.makeConstraints { make in
@@ -80,8 +80,23 @@ class HomeView: UIView {
             make.height.equalTo(sceneHeight)
         }
         sceneView.scene = scene
-        sceneView.backgroundColor = UIColor.white
+        sceneView.backgroundColor = UIColor.black
         sceneView.allowsCameraControl = true
+        
+        // ambien light
+        let ambientLightNode = SCNNode()
+        ambientLightNode.light = SCNLight()
+        ambientLightNode.light?.type = .ambient
+        ambientLightNode.light?.color = UIColor.themeLightGray()
+        scene?.rootNode.addChildNode(ambientLightNode)
+        
+        // spot light
+        let spotLightNode = SCNNode()
+        spotLightNode.light = SCNLight()
+        spotLightNode.light?.type = .spot
+        spotLightNode.light?.color = UIColor.themeRed()
+        spotLightNode.position = SCNVector3Make(100, 100, 100)
+        scene?.rootNode.addChildNode(spotLightNode)
         
         sceneButton = UIButton()
         self.addSubview(sceneButton)
