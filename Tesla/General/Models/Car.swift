@@ -16,12 +16,13 @@ enum Model {
     case three
 }
 
-struct Car {
+class Car {
     var model: Model
 //    var currentBattery: Double? 电量未知，不设置；使用动态计算的续航里程
 //    var totalBattery: Double
     var availableDistance: Double = 0
     var totalDistance: Double
+    var insideDegree: Double = 0
     
     init(model: Model, totalDistance: Double) {
         self.model = model

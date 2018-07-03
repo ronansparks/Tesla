@@ -15,19 +15,23 @@ class TabBarViewController: UITabBarController {
         addChildViewController()
     }
     
+    // 加载三个 Tab
     private func addChildViewController() {
-        setChildViewController(MainViewController(), imageName: "tabbar_home")
+        setChildViewController(HomeViewController(), imageName: "tabbar_home")
         setChildViewController(ControlViewController(), imageName: "tabbar_control")
-//        setChildViewController(ProfileViewController(), imageName: "tabbar_profile")
-        setChildViewController(UserInfoTableViewController(), imageName: "tabbar_profile")
+//        setChildViewController(UserInfoTableViewController(), imageName: "tabbar_profile")
+        setChildViewController(ProfileViewController(), imageName: "tabbar_profile")
+        
     }
     
+    // 设置一个 Tab
     private func setChildViewController(_ controller: UIViewController, title: String = "", imageName: String) {
         controller.tabBarItem.image = UIImage(named: imageName)
         controller.tabBarItem.selectedImage = UIImage(named: imageName + "_selected")
         
         let navigationVC = RootNavigationViewController(rootViewController: controller)
         addChildViewController(navigationVC)
+//        self.edgesForExtendedLayout = UIRectEdge(rawValue: 0)
     }
     
 }

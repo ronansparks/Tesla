@@ -12,52 +12,35 @@ import RxCocoa
 
 class PhoneCodeViewController: UIViewController {
     
-    var resendButton: UIButton!
-    var codeTextView: PhoneCodeView!
     var timer = DispatchSource.makeTimerSource(flags: [], queue: DispatchQueue.global())
+    var codeView: PhoneCodeValidView!
     
-    let padding: CGFloat = 30
     let bag = DisposeBag()
 
     override func viewDidLoad() {
         super.viewDidLoad()
         navigationItem.title = "Phone Code"
         view.backgroundColor = UIColor.themeLightGray()
-        navigationController?.navigationBar.tintColor = UIColor.themeDarkGray()
-
-        setupSubviews()
-        startTimer()
     }
-
-    func setupSubviews() {
-        resendButton = UIButton()
-        self.view.addSubview(resendButton)
-        resendButton.snp.makeConstraints { make in
-            make.right.equalToSuperview().offset(-padding)
-            make.centerY.equalToSuperview().offset(-UNIVERSAL_RADIUS_COMPACT)
-            make.height.equalTo(UNIVERSAL_RADIUS_COMPACT)
-            make.width.equalTo(142)
+    
+    override func viewWillLayoutSubviews() {
+        super.viewWillLayoutSubviews()
+        if codeView == nil {
+            setupSubviews()
+            startTimer()
         }
-        resendButton.setTitleColor(UIColor.themeGreen(), for: .normal)
-        resendButton.setTitleColor(UIColor.themeRed(), for: .disabled)
-        resendButton.titleLabel?.font = UIFont.setGotham(.body, weight: .book)
-        resendButton.backgroundColor = UIColor.themeBackgroundColor()
-        resendButton.layer.cornerRadius = UNIVERSAL_CORNER_RADIUS
-        resendButton.layer.masksToBounds = true
-        resendButton.rx.tap
+    }
+    
+    func setupSubviews() {
+        codeView = PhoneCodeValidView(frame: self.view.bounds)
+        self.view.addSubview(codeView)
+        codeView.resendButton.rx.tap
             .subscribe(onNext: { [weak self] _ in
                 self?.startTimer()
             })
             .disposed(by: bag)
         
-        codeTextView = PhoneCodeView()
-        self.view.addSubview(codeTextView)
-        codeTextView.snp.makeConstraints { make in
-            make.width.equalToSuperview()
-            make.height.equalTo(UNIVERSAL_RADIUS_COMPACT)
-            make.bottom.equalTo(resendButton.snp.top).offset(-padding)
-        }
-        codeTextView.textField.rx.text.orEmpty
+        codeView.codeTextField.rx.text.orEmpty
             .subscribe(onNext: { [weak self] text in
                 if text.count == 6 {
                     self?.succeedToLogin()
@@ -65,25 +48,24 @@ class PhoneCodeViewController: UIViewController {
             })
             .disposed(by: bag)
     }
-    
+
     // 定时器
     func startTimer() {
-        resendButton.isEnabled = false
-        codeTextView.textField.text = ""
+        codeView.resendButton.isEnabled = false
+        codeView.codeTextField.text = ""
         
         var count = 60
         timer.schedule(wallDeadline: DispatchWallTime.now(), repeating: .seconds(1))
         timer.setEventHandler {
             count -= 1
             DispatchQueue.main.async {
-                self.resendButton.setTitle("Resend (\(count)s)", for: .normal)
+                self.codeView.resendButton.setTitle("Resend (\(count)s)", for: .normal)
             }
-//            print("timer: \(count)")
             if count <= 0 {
                 self.timer.cancel()
                 DispatchQueue.main.async {
-                    self.resendButton.setTitle("Resend", for: .normal)
-                    self.resendButton.isEnabled = true
+                    self.codeView.resendButton.setTitle("Resend", for: .normal)
+                    self.codeView.resendButton.isEnabled = true
                 }
             }
         }
