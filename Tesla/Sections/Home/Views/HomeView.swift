@@ -70,7 +70,7 @@ class HomeView: UIView {
         cameraNode.camera?.zFar = 600
         cameraNode.position = SCNVector3Make(0, 100, 200)
         
-        let scene = SCNScene(named: "art.scnassets/Blue.dae")
+        let scene = SCNScene(named: "art.scnassets/Tesla_Model_3.dae")
         scene?.rootNode.scale = SCNVector3Make(2, 2, 2)
         
         sceneView = SCNView()

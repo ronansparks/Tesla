@@ -85,6 +85,7 @@ class LoginScrollView: UIScrollView, UITextFieldDelegate {
         numberTextField.font = UIFont.setGotham(.title)
         numberTextField.keyboardType = .numberPad
         numberTextField.delegate = self
+        numberTextField.placeholder = "Input any 3 digits"
         numberTextField.rx.controlEvent(.editingDidEndOnExit)
             .subscribe(onNext: { [weak self] _ in
                 self?.numberTextField.resignFirstResponder()
