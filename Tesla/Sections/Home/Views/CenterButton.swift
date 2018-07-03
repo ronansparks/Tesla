@@ -15,7 +15,6 @@ struct ButtonContent {
     var normalText: String
     var selectedImage: String
     var selectedText: String
-//    var state: ButtonItemState
 }
 
 class CenterButton: UIButton {

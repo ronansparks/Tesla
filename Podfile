@@ -10,6 +10,7 @@ target 'Tesla' do
   pod 'RxCocoa',    '~> 4.0'
   pod 'SnapKit', '~> 4.0.0'
   pod 'Firebase/Core'
+  pod 'RxDataSources', '~> 3.0'
 
   target 'TeslaTests' do
     inherit! :search_paths
