@@ -114,9 +114,7 @@ class ARViewController: UIViewController, ARSCNViewDelegate {
     // 创建 Tesla Node
     func makeTesla() -> SCNNode {
         let tesla = SCNNode()
-        
-//        let scene = SCNScene(named: "art.scnassets/Model3.dae")
-        let scene = SCNScene(named: "art.scnassets/Blue.dae")
+        let scene = SCNScene(named: "art.scnassets/Tesla_Model_3.dae")
         
         let rootNode = scene?.rootNode
         rootNode?.scale = SCNVector3Make(0.01, 0.01, 0.01)
